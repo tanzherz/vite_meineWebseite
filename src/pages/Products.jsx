@@ -1,12 +1,13 @@
-import { ProductsGrid } from '../components'
+import { ProductsGrid, ProductsQuestion } from '../components'
 import { data } from '../components/data'
 
 const Products = () => {
-  console.log(data)
+  // console.log(data)
 
   return (
     <div>
       <ProductsGrid />
+      <ProductsQuestion />
     </div>
   )
 }

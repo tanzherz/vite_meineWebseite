@@ -13,7 +13,7 @@ const Hero1Text = ({ tabs, currentItem }) => {
             className='grid grid-cols-[15px_minmax(auto,_1fr)] gap-2 items-center  mt-3'
           >
             <FaAngleDoubleRight className='text-secondary' />
-            <p>{text}</p>
+            <p className='text-lg md:text-xl'>{text}</p>
           </div>
         )
       })}

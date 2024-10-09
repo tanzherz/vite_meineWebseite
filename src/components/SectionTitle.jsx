@@ -1,8 +1,12 @@
 const SectionTitle = ({ text }) => {
   return (
-    <div className='border-b border-base-300 pb-5'>
-      <h2 className='text-3xl t font-medium tracking-wider '>{text}</h2>
-    </div>
+    <>
+      <div className='border-b-4 border-primary mb-4'>
+        <h2 className='font-bold  btn-ghost cursor-none text-xl md:text-2xl tracking-wider '>
+          {text}
+        </h2>
+      </div>
+    </>
   )
 }
 export default SectionTitle

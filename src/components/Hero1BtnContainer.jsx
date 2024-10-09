@@ -8,7 +8,9 @@ const Hero1BtnContainer = ({ tabs, currentItem, setCurrentItem }) => {
             key={tab.id}
             onClick={() => setCurrentItem(index)}
             className={
-              index === currentItem ? 'btn btn-secondary' : 'btn btn-primary'
+              index === currentItem
+                ? 'btn btn-secondary capitalize text-lg md:text-xl'
+                : 'btn btn-primary capitalize text-lg md:text-xl'
             }
           >
             {tab.tab}

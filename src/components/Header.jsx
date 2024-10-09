@@ -1,42 +1,42 @@
-import { BsMoonFill, BsSunFill } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-
-const themes = {
-  winter: 'winter',
-  dark: 'black',
-}
-const getThemeFromLocalStorage = () => {
-  return localStorage.getItem('theme' || themes.winter)
-}
+import { useSelector } from 'react-redux'
+import { Link, useNavigate } from 'react-router-dom'
+import { logoutUser } from '../user/userSlice'
+import { useDispatch } from 'react-redux'
 
 const Header = () => {
-  const [theme, setTheme] = useState(getThemeFromLocalStorage())
-  const handleTheme = () => {
-    const { winter, dark } = themes
-    const newTheme = theme === winter ? dark : winter
-    setTheme(newTheme)
+  const navigate = useNavigate()
+  const user = useSelector((state) => state.userState.user)
+
+  const dispatch = useDispatch()
+
+  const handleLogout = () => {
+    navigate('/login')
+    dispatch(logoutUser())
   }
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('theme', theme)
-  }, [theme])
-
   return (
-    <header className='bg-base-300 flex  justify-center a py-2 '>
-      <div className='flex items-center'>
-        {/**USER */}
-        {/**LINKS */}
-
-        <label className='swap swap-rotate mr-3'>
-          <input type='checkbox' onChange={handleTheme} />
-          <BsMoonFill className='swap-on h-4 w-4' />
-          <BsSunFill className='swap-off h-4 w-4' />
-        </label>
-      </div>
-      <div className='flex items-center'>
-        <Link to='/login'>login</Link>
+    <header className=' bg-primary text-secondary'>
+      <div className='align-element flex justify-center sm:justify-end py-2'>
+        <div className=' flex items-center'>
+          {user ? (
+            <div className=' flex gap-x-2 sm:gap-x-8'>
+              <p className='text-sm sm:text-base capitalize'>
+                {' '}
+                Hallo {user.username}
+              </p>
+              <button
+                className='btn btn-xs btn-outline btn-secondary'
+                onClick={handleLogout}
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <div className='flex items-center'>
+              <Link to='/login'>login</Link>
+            </div>
+          )}
+        </div>
       </div>
     </header>
   )
