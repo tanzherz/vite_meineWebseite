@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import { Navbar, Header } from '../components'
-import { useSelector } from 'react-redux'
+
 import { redirect } from 'react-router-dom'
 // import { store } from '../store'
 import { toast } from 'react-toastify'

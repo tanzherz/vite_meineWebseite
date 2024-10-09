@@ -1,12 +1,12 @@
 import { Form, redirect, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { loginUser } from '../user/userSlice'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import { useState } from 'react'
 
 const Login = () => {
-  const user = useSelector((state) => state.userState.user)
+  // const user = useSelector((state) => state.userState.user)
   // console.log(user.username)
 
   const [person, setPerson] = useState('')
@@ -27,10 +27,13 @@ const Login = () => {
     navigate('/')
     dispatch(loginUser(person))
   }
-  console.log('Benutzer' + user)
+  // console.log('Benutzer' + user)
 
   return (
-    <section className='h-screen grid place-items-center'>
+    <section
+      className='h-screen grid place-items-center'
+      onSubmit={handleLogin}
+    >
       <Form className='card w-96 p-8 bg-base-100 shadow-lg flex flex-col gap-y-4'>
         <h4 className='text-center text-3xl font-bold'>Login</h4>
         <div className='form-control'>
@@ -52,7 +55,7 @@ const Login = () => {
         <button
           type='submit'
           className='btn btn-secondary btn-block'
-          onClick={handleLogin}
+          // onClick={handleLogin}
         >
           Login
         </button>
