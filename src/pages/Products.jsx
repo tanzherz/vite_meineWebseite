@@ -1,5 +1,5 @@
 import { ProductsGrid, ProductsQuestion } from '../components'
-import { data } from '../components/data'
+// import { data } from '../components/data'
 
 const Products = () => {
   // console.log(data)

@@ -1,4 +1,4 @@
-import Standard from '../assets/Hallo_grün.jpg'
+import Standard from '../assets/Hallo.jpg'
 
 const About = () => {
   return (

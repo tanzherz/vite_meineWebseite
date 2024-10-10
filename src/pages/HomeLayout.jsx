@@ -1,4 +1,4 @@
-import { Outlet, useLoaderData } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import { Navbar, Header } from '../components'
 
 import { redirect } from 'react-router-dom'
