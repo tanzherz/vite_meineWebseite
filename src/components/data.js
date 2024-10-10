@@ -26,8 +26,6 @@ export const siegel = [
   Knopf,
   Knopf2,
   Cradle,
-  PetFlasche,
-  Unbekannt,
 ]
 
 import SommerShirt from '../assets/t-shirt_Sommer.jpg'
@@ -125,19 +123,23 @@ export const tabsData = [
     id: 2,
     tab: 'gegenwart',
     description: [
-      'Parallel-Trends, auf der einen Seite Nachhaltigkeitstrend und auf der anderen Seite Ultra-Fast-Fashion-Trend',
-      'Die Menschen konsumieren hauptsächlich FastFashion, viele ohne es zu wissen, wie z.B. H&M, Zara, weil die Mode trendig ist und der Preis klein',
-      'Die nachhaltige Mode gilt heutzutage eher als teuer',
-      'In bezug auf Nachhaltigkeit versagt der freie Markt und daher tritt die Europäische Richtlinie in Kraft und die Textilindustrie wird in Zukunst,bereits in 2030 eher kontrolliert,',
+      'Parallel-Trends, auf der einen Seite Nachhaltigkeitstrend und auf der anderen Seite Ultra-Fast-Fashion-Trend.',
+      'Die Menschen konsumieren hauptsächlich FastFashion, viele ohne es zu wissen, wie z.B. H&M und/oder Zara, weil die Mode trendig und der Preis klein ist.',
+      'Die nachhaltige Mode gilt heutzutage eher als teuer & uncool.',
+      'In Bezug auf Nachhaltigkeit versagt die freie Marktwirtschaft und daher tritt die Politik auf die Bühne.',
+      'Viele EU-Richtlinien sind bereits in Kraft getreten und müssen (nur noch) in nationales Recht umgesetzt werden wie z.B. Due Dilligece Richtlinie. Sogar das deutsche Lieferkettengesetz muss demnach angepasst werden.',
+      'In naher Zukungt, bereits 2030 wird die Textilindustrie verstärkt reguliert werden.',
     ],
   },
   {
     id: 3,
     tab: 'ziel',
     description: [
-      'Eine Plattform, die den Konsumenten spielerisch zum nachhaltigen Kauf bewegt, unteranderm mit Einsatz der KI',
-      ' Information über Nachhaltigkeitssiegel',
-      'Den Regulierungstrend nutzen',
+      'ModeMacher! Eine Plattform, die den Konsumenten spielerisch zum nachhaltigen Kauf/Konsum bewegt.',
+      'Unteranderm mit dem Einsatz der KI im Bild-Bereich und der dynamisch Interaktion auf der Webseite.',
+      'Information über anerkannte Siegeln aus dem Bereich Umweltschutz, Menschenrechte und Gesundheit, den Nachhaltigkeit hat viele Facetten.',
+      'Schaffung der Transparenz in Bezug auf Nachhaltigkeit',
+      'Den Regulierungstrend nutzen, Due Dillligence Richtlinie',
     ],
   },
 ]

@@ -2,7 +2,7 @@ import { data } from './data'
 import Siegel from './Siegel'
 const ProductsGrid = () => {
   return (
-    <div className='pt-12 flex w-full overflow-auto place-items-center min-h-[100vh] border-2'>
+    <div className='pt-12 flex w-full overflow-auto place-items-center min-h-[100vh] '>
       {data.map((dataItem) => {
         const { id, text, mode, bild, siegel, image, title } = dataItem
         return (
@@ -29,7 +29,7 @@ const ProductsGrid = () => {
                   {mode}
                 </h2>
               </div>
-              <h3 className='text-base md:text-lg text-secondary invert pl-4 tracking-wide font-semibold capitalize  '>
+              <h3 className='text-base md:text-lg text-secondary  pl-4 tracking-wide font-semibold capitalize  '>
                 {title}
               </h3>
               <p className='text-base md:text-lg text-base-300 pl-4 pr-3'>

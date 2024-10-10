@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     loader: homeLayoutLoader(store),
     children: [
       { index: true, element: <Landing /> },
-      { path: '/products:id', element: <Products /> },
+      { path: '/products/:id', element: <Products /> },
       { path: 'about', element: <About /> },
     ],
   },

@@ -1,6 +1,11 @@
+import Standard from '../assets/Hallo_grün.jpg'
+
 const About = () => {
   return (
     <>
+      <figure className='grid place-items-center mt-5'>
+        <img src={Standard} className='w-72 object-contain' />
+      </figure>
       <div className='flex flex-wrap gap-2 mt-10 sm:gap-x-6 items-center justify-center'>
         <h1 className='text-3xl font-bold leading-none tracking-tight'>
           Wir lieben

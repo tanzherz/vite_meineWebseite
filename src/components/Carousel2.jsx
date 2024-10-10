@@ -4,7 +4,7 @@ const Carousel2 = () => {
     <div className='h-[24rem] carousel carousel-center p-4 space-x-4 bg-primary rounded-box '>
       {carousel.map((bild) => {
         return (
-          <div key={bild} className='carousel-item'>
+          <div key={bild} className='carousel-item '>
             <img
               src={bild}
               alt=''

@@ -16,8 +16,12 @@ export default {
           secondary: '#5cdf4a',
         },
       },
-
-      'black',
+      {
+        black: {
+          ...require('daisyui/src/theming/themes')['black'],
+          primary: '#ea57bc',
+        },
+      },
     ],
   },
 }

@@ -7,7 +7,6 @@ const Landing = () => {
       <Hero1 />
       <Hero2 />
       <Hero3 />
-      
     </>
   )
 }

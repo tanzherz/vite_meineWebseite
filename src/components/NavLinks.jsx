@@ -6,7 +6,7 @@ const links = [
 ]
 const NavLinks = () => {
   return (
-    <div className='flex '>
+    <div className='flex mr-8 '>
       {links.map((link) => {
         return (
           <li key={link.id}>

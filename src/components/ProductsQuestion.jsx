@@ -30,7 +30,7 @@ const ProductsQuestion = () => {
   console.log(name)
 
   return (
-    <section className='grid place-items-center mt-10 border-2 border-primary'>
+    <section className='grid place-items-center mt-10 '>
       <Form className='flex flex-col flex-wrap place-items-center w-96 md:w-[30rem] p-8 bg-base-100 shadow-lg '>
         <h1 className='text-lg sm:text-xl  tracking-normal '>
           Welche Marke ist hinter folgendem User versteckt? Ohne nachzugucken!

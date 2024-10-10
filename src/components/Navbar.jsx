@@ -10,7 +10,7 @@ const Navbar = () => {
     dispatch(toggleTheme())
   }
   return (
-    <div className='navbar align-element bg-base-100'>
+    <div className='navbar  align-element bg-base-100'>
       <div className='flex-1'>
         <h4 className='hidden sm:flex font-bold mr-3'>
           {' '}
@@ -24,6 +24,7 @@ const Navbar = () => {
           ModeMacher
         </NavLink>
       </div>
+
       <div className='flex-none'>
         <ul className='menu menu-horizontal px-1'>
           <NavLinks />
@@ -44,7 +45,7 @@ const Navbar = () => {
       </div>
       <div>
         {' '}
-        <label className='swap swap-rotate mr-28'>
+        <label className='swap swap-rotate mr-6'>
           <input type='checkbox' onChange={handleTheme} />
           <BsMoonFill className='swap-on h-4 w-4' />
           <BsSunFill className='swap-off h-4 w-4' />
