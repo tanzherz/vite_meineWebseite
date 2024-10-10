@@ -2,7 +2,7 @@ import Standard from '../assets/Hallo.jpg'
 
 const About = () => {
   return (
-    <>
+    <section className=''>
       <figure className='grid place-items-center mt-5'>
         <img src={Standard} className='w-72 object-contain' />
       </figure>
@@ -25,7 +25,7 @@ const About = () => {
         velit sed consequuntur. Commodi magni earum omnis perspiciatis velit
         provident dolorem?
       </p>
-    </>
+    </section>
   )
 }
 export default About
