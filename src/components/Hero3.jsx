@@ -7,7 +7,7 @@ const Hero3 = () => {
   return (
     <>
       <SectionTitle text='Regulierung' />
-      <div className='grid gap-12 items-center mt-10'>
+      <div className='grid gap-12 items-center mt-10 border-2 border-secondary'>
         <div>
           <div className='flex '>
             <h1 className='text-lg sm:text-xl  tracking-normal '>

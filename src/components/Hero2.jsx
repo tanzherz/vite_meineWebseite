@@ -3,13 +3,15 @@ import SectionTitle from './SectionTitle.jsx'
 
 const Hero2 = () => {
   return (
-    <div className='pt-24'>
+    <>
       <SectionTitle text='KI' />
-      <div className='grid'>
-        <h1 className='text-lg md:text-xl leading-8 tracking-normal mt-4'>
-          Generierte Bilder der KI basierend auf dem Text des Menschen: komplexe
-          vs. minimalistische Designs:
-        </h1>
+      <div className='grid gap-1 items-center border-2 border-secondary'>
+        <div className='flex'>
+          <h1 className='text-lg md:text-xl leading-8 tracking-normal mt-4'>
+            Generierte Bilder der KI basierend auf dem Text des Menschen:
+            komplexe vs. minimalistische Designs:
+          </h1>
+        </div>
         <div className='grid grid-cols-2 mt-4'>
           <div className='chat chat-start gap-2'>
             <div className='chat-bubble bg-primary text-base-200 md:text-lg'>
@@ -36,7 +38,7 @@ const Hero2 = () => {
 
         <Carousel />
       </div>
-    </div>
+    </>
   )
 }
 export default Hero2

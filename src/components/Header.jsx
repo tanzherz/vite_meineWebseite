@@ -15,11 +15,11 @@ const Header = () => {
   }
 
   return (
-    <header className=' bg-primary text-secondary'>
+    <header className='bg-primary w-[38rem] sm:w-auto text-secondary border-2 border-secondary '>
       <div className='align-element flex justify-center sm:justify-end py-2'>
-        <div className=' flex items-center'>
+        <div className='flex items-center'>
           {user ? (
-            <div className=' flex gap-x-2 sm:gap-x-8'>
+            <div className='flex gap-x-2 sm:gap-x-8'>
               <p className='text-sm sm:text-base capitalize'>
                 {' '}
                 Hallo {user.username}
