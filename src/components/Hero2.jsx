@@ -5,7 +5,7 @@ const Hero2 = () => {
   return (
     <>
       <SectionTitle text='KI' />
-      <div className='grid gap-1 items-center border-2 border-secondary'>
+      <div className='grid gap-1 items-center '>
         <div className='flex'>
           <h1 className='text-lg md:text-xl leading-8 tracking-normal mt-4'>
             Generierte Bilder der KI basierend auf dem Text des Menschen:
