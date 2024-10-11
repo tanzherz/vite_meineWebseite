@@ -113,9 +113,9 @@ export const tabsData = [
     id: 1,
     tab: 'vision',
     description: [
-      'Es wird verstärkt bewusst nachhaltige Mode konsumiert, der Begriff Fast Fashion ist raus aus dem Trend',
+      'Es wird verstärkt bewusst nachhaltige Mode konsumiert, der Begriff Fast Fashion ist raus aus dem Trend.',
       'Die Marken übernehmen Verantwortung für den Ressourcen-Verbrauch wie Wasser, Energie auf der Produktions- und Verarbeitungsebene.',
-      'Die Marken besitzen ein Abfallsystem innerhalb der ganzen Lieferkette',
+      'Die Marken besitzen ein Abfallsystem innerhalb der ganzen Lieferkette.',
       'Die Menschen in den Fabriken erhalten einen existgenzsichernden Lohn.',
     ],
   },
@@ -138,8 +138,8 @@ export const tabsData = [
       'ModeMacher! Eine Plattform, die den Konsumenten spielerisch zum nachhaltigen Kauf/Konsum bewegt.',
       'Unteranderm mit dem Einsatz der KI im Bild-Bereich und der dynamisch Interaktion auf der Webseite.',
       'Information über anerkannte Siegeln aus dem Bereich Umweltschutz, Menschenrechte und Gesundheit, den Nachhaltigkeit hat viele Facetten.',
-      'Schaffung der Transparenz in Bezug auf Nachhaltigkeit',
-      'Den Regulierungstrend nutzen, Due Dillligence Richtlinie',
+      'Schaffung der Transparenz in Bezug auf Nachhaltigkeit.',
+      'Den Regulierungstrend nutzen: Due Dillligence Richtlinie.',
     ],
   },
 ]
