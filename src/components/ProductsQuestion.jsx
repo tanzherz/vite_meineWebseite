@@ -60,7 +60,7 @@ const ProductsQuestion = () => {
             Antwort
           </button>
           {answer && (
-            <div className='text-lg md:text-xl text-center mt-2'>
+            <div className='text-lg md:text-xl text-center mt-2 mb-10'>
               {showAnswer()}
             </div>
           )}

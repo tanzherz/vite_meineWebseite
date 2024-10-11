@@ -16,7 +16,7 @@ export const Hero3Queation3 = () => {
     console.log('antwort')
 
     if (siegel === '4')
-      return `Das ist richtig. Den Grüner Konpf 2.0 ist eine verbesserte Version von Grünerknopf 1.0`
+      return `Das ist richtig. Den Grüner Konpf 2.0 ist eine verbesserte Version vom Grünen Knopf 1.0!`
     else {
       return `Versuchs noch einmal`
     }

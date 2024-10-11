@@ -2,7 +2,7 @@ import { data } from './data'
 import Siegel from './Siegel'
 const ProductsGrid = () => {
   return (
-    <div className='pt-12 flex w-screen  overflow-auto place-items-center min-h-[100vh] '>
+    <div className='pt-12 flex overflow-scroll place-items-center min-h-[100vh] '>
       {data.map((dataItem) => {
         const { id, text, mode, bild, siegel, image, title } = dataItem
         return (
