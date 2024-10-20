@@ -23,8 +23,8 @@ export const Hero3Queation3 = () => {
   }
 
   return (
-    <section className='grid place-items-center  '>
-      <div className='flex flex-wrap w-full place-content-center   '>
+    <section className='grid items-centee  '>
+      <div className='flex flex-wrap  place-content-center   '>
         {siegelItems.map((item, index) => {
           return (
             <figure
@@ -37,7 +37,7 @@ export const Hero3Queation3 = () => {
           )
         })}
       </div>
-      <Form className='flex flex-col flex-wrap place-items-center w-96 md:w-[30rem] p-8 mt-4 mb-12 bg-base-100 shadow-lg '>
+      <Form className='flex flex-col flex-wrap items-center w-96 md:w-[30rem] p-8 mt-4 mb-12 bg-base-100 shadow-lg '>
         <h1 className='text-lg sm:text-xl tracking-normal mb-4'>
           Wähle die passende Zahl, die rausfliegen soll!
         </h1>

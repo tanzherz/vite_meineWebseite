@@ -10,7 +10,7 @@ const Hero1Text = ({ tabs, currentItem }) => {
         return (
           <div
             key={id}
-            className='grid grid-cols-[15px_minmax(auto,_1fr)] gap-2 items-center  mt-3'
+            className='grid grid-cols-[15px_minmax(auto,_1fr)] gap-2 items-center  mt-3 px-4'
           >
             <FaAngleDoubleRight className='text-secondary' />
             <p className='text-lg md:text-xl'>{text}</p>
