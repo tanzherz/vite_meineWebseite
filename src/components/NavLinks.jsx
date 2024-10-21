@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const links = [
   { id: 1, url: '/', text: 'Katha´s Idee' },
@@ -7,27 +7,29 @@ const links = [
   { id: 3, url: '/about', text: 'Über Katha:)' },
 ]
 const NavLinks = () => {
+  const location = useLocation()
   return (
     <div className='flex align-element '>
       {links.map((link) => {
+        const isActive = location.pathname === link.url
         return (
           <li key={link.id} className='mr-2 sm:mr-4'>
             <NavLink
               to={link.url}
-              // className='w-full  text-base-300'
-              // style={({ isActive }) => ({
-              //   borderBottom: isActive ? '4px solid #3b82f6' : 'none', // Nur die Unterstreichung für aktive Links
-              //   backgroundColor: '#2e0454',
-              //   color: isActive ? '#4be696' : '#aaa0a0', // Textfarbe
-              //   textDecoration: 'none', // Entfernt die standardmäßige Unterstreichung
-              //   padding: '2px 0px', // Optionales Padding oben und unten
-              //   borderRadius: '0',
-              // })}
+              replace
               className={({ isActive }) =>
                 isActive
-                  ? 'border-b-2 border-blue-500 text-blue-500 hover:bg-transparent focus:bg-transparent' // Entfernt Hover und Focus Hintergründe
-                  : 'border-b-2 border-transparent text-black hover:bg-transparent focus:bg-transparent'
+                  ? 'border-x-4  border-secondary mx-0 px-2.5 rounded-ss-md rounded-ee-md text-base font-semibold tracking-wide text-base-300 focus:text-base-300'
+                  : 'border-b-2 border-transparent text-base text-neutral-content hover:text-base-300 focus:text-base-300'
               }
+              // end={link.url === '/'}
+              // className={
+              //   isActive
+              //     ? ' bg-primary text-secondary ' // Aktiv: blauer Text und blauer Rand
+              //     : ' text-base-300 hover:text-secondary ' // Inaktiv: Schwarz, bei Hover/Fokus Blau
+              // }
+              // onFocus={() => console.log('Link focused')} // Fokus explizit setzen
+              // onClick={() => console.log('Link clicked')}
             >
               {link.text}
             </NavLink>
