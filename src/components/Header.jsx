@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header className='w-screen text-primary  '>
-      <div className='align-element flex align-middle justify-between py-2 '>
+      <div className='align-element flex flex-wrap align-middle justify-between py-2 px-2'>
         <div className='mr-6'>
           {user ? (
             <div className='flex gap-x-4 sm:gap-x-5'>
@@ -38,7 +38,7 @@ const Header = () => {
           )}
         </div>
 
-        <div className='flex align-middle ml-2 sm:ml-6'>
+        <div className='flex align-middle'>
           {' '}
           <label className='swap swap-rotate mr-6'>
             <input type='checkbox' onChange={handleTheme} />

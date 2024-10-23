@@ -6,15 +6,6 @@ import { redirect } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
 export const loader = (store) => () => {
-  // console.log(request)
-  // const params = new URL(request.url).searchParams
-  // const search = params.get('siegel')
-
-  // const params = Object.fromEntries([
-  //   ...new URL(request.url).searchParams.entries(),
-  // ])
-  // console.log(params)
-
   const user = store.getState().userState.user
 
   if (!user) {

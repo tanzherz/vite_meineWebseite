@@ -6,7 +6,7 @@ const Hero2 = () => {
   return (
     <>
       <SectionTitle text='KI' />
-      <div className='align-element block  items-center  border-2 border-green-600 '>
+      <div className='align-element block  items-center   '>
         <h1 className='text-lg md:text-xl leading-8 tracking-normal mt-4 px-4'>
           Generierte Bilder der KI basierend auf dem Text des Menschen: komplexe
           vs. minimalistische Designs:

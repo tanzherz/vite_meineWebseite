@@ -8,10 +8,10 @@ const links = [
 ]
 const NavLinks = () => {
   return (
-    <div className='flex align-element '>
+    <ul className=' menu menu-horizontal justify-center px-2  align-element mx-0  '>
       {links.map((link) => {
         return (
-          <li key={link.id} className='mr-2 sm:mr-4'>
+          <li key={link.id} className='mr-2 sm:mr-4 '>
             <NavLink
               to={link.url}
               replace
@@ -26,7 +26,7 @@ const NavLinks = () => {
           </li>
         )
       })}
-    </div>
+    </ul>
   )
 }
 export default NavLinks

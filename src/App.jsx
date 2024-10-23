@@ -12,12 +12,15 @@ import {
 
 import { ErrorElement } from './components'
 import { loader as landingLoader } from './pages/Landing'
+
+import { action as hero3Action } from './components/Hero3'
 import { store } from './store'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
+
     errorElement: <Error />,
 
     children: [
@@ -25,6 +28,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Landing />,
         loader: landingLoader(store),
+        action: hero3Action,
         errorElement: <ErrorElement />,
       },
       {

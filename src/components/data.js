@@ -18,15 +18,7 @@ import Cradle from '../assets/Nachhaltigkeit/CreadleToCradle.png'
 import PetFlasche from '../assets/Nachhaltigkeit/PetFlasche.png'
 import Unbekannt from '../assets/Nachhaltigkeit/Unbekannt.png'
 
-export const siegel = [
-  BlauerEngel,
-  Ecolabel,
-  Gots,
-  IvnBest,
-  Knopf,
-  Knopf2,
-  Cradle,
-]
+export const siegel = [BlauerEngel, Ecolabel, Gots, IvnBest, Knopf2, Cradle]
 
 import SommerShirt from '../assets/t-shirt_Sommer.jpg'
 import KatzenShirt from '../assets/t-shirt_Katze_farbenfroh.jpg'

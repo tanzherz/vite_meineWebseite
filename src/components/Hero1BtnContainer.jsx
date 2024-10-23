@@ -1,6 +1,6 @@
 const Hero1BtnContainer = ({ tabs, currentItem, setCurrentItem }) => {
   return (
-    <section className='flex justify-center sm:justify-start gap-2 mt-10'>
+    <section className='flex flex-wrap justify-center sm:justify-start gap-2 mt-10'>
       {tabs.map((tab, index) => {
         return (
           <button

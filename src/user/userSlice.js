@@ -29,7 +29,7 @@ const userSlice = createSlice({
       console.log('stateUser' + state.user)
 
       // localStorage.setItem('user', JSON.stringify(state.user))
-      console.log(action.payload)
+      // console.log(action.payload)
     },
     logoutUser: (state) => {
       state.user = null
